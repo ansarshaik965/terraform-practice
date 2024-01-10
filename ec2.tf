@@ -21,8 +21,4 @@ resource "aws_key_pair" "key"{
                   public_key = file( "/home/ubuntu/.ssh/id.pub")
                   key_name = "mera-key"
 }
-output "instance_public_ip" {
-  description = "Public IP address of the EC2 instance"
-  value       = aws_instance.my_terra_instance.public_ip
-}
 
